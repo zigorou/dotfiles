@@ -1,0 +1,12 @@
+[user]
+	name = Toru Yamaguchi
+	email = zigorou@cpan.org
+[color]
+	ui = auto
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+[core]
+	pager = "LESS=-R less"
+	excludesfile = ~/.gitignore
