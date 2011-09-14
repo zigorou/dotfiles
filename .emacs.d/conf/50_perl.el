@@ -1,3 +1,8 @@
+(require 'perlbrew-mini)
+;; change to your username below
+; (perlbrew-mini-set-perls-dir (concat (getenv "HOME") "/perl5/perlbrew/perls/"))
+(perlbrew-mini-use-latest)
+
 (defalias 'perl-mode 'cperl-mode)
 (setq cperl-indent-level 4)
 (setq cperl-continued-statement-offset 4)
@@ -48,16 +53,17 @@
 
 
 ; perl tidy
-(defun perltidy-region ()
-  "Run perltidy on the current region."
-  (interactive)
-  (save-excursion
-    (shell-command-on-region (point) (mark) "perltidy -q" nil t)))
-(defun perltidy-defun ()
-  "Run perltidy on the current defun."
-  (interactive)
-  (save-excursion (mark-defun)
-  (perltidy-region)))
+(require 'perltidy)
+;; (defun perltidy-region ()
+;;   "Run perltidy on the current region."
+;;   (interactive)
+;;   (save-excursion
+;;     (shell-command-on-region (point) (mark) "perltidy -q" nil t)))
+;; (defun perltidy-defun ()
+;;   "Run perltidy on the current defun."
+;;   (interactive)
+;;   (save-excursion (mark-defun)
+;;   (perltidy-region)))
 
 ; perl completion
 (add-to-list 'load-path "~/.emacs.d/elisp/perl-completion")

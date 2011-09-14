@@ -52,7 +52,7 @@
          (local-file (file-relative-name
                       temp-file
                       (file-name-directory buffer-file-name))))
-    (list "perl" (list "-wc" local-file))))
+    (list "perl" (list "-MProject::Libs" "-wc" local-file))))
 
 (defun flymake-perl-load ()
   (interactive)
