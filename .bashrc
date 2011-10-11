@@ -5,6 +5,8 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+. $HOME/perl5/perlbrew/etc/bashrc
+
 # User specific aliases and functions
 alias less="/bin/less -r"
 alias ls="/bin/ls -GF"
