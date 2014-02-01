@@ -24,10 +24,10 @@
           (setq input-method-function input-method-function-save)
           (key-chord-mode (if current-input-method 0 1))))
 
-(key-chord-define-global "vl" (lambda ()
-                                (interactive)
-                                (do-applescript "activate application \"VLC\"
-                                                 activate application \"Emacs\"")))
+;(key-chord-define-global "vl" (lambda ()
+;                                (interactive)
+;                                (do-applescript "activate application \"VLC\"
+;                                                 activate application \"Emacs\"")))
 
 (key-chord-define-global "v7" (lambda ()
                                 (interactive)
