@@ -1,8 +1,0 @@
-;; load-path
-(add-to-list 'load-path "~/.emacs.d/elisp")
-
-(require 'auto-install)
-(setq auto-install-directory "~/.emacs.d/elisp/")
-
-(require 'init-loader)
-(init-loader-load "~/.emacs.d/conf")
