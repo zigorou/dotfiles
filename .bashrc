@@ -11,6 +11,7 @@ eval "$(plenv init -)"
 
 ## nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export NODE_PATH=$HOME/.nodebrew/current/lib/node_modules
 
 ## npm
 export PATH=$(npm bin):$PATH
