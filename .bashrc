@@ -13,7 +13,8 @@ GIT_BASH_DIR=/usr/local/Cellar/git/$GIT_VERSION/etc/bash_completion.d
 source $GIT_BASH_DIR/git-prompt.sh
 source $GIT_BASH_DIR/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='\[\e[1;33m\]\t \[\e[1;32m\]\u@\h\[\e[00m\] \[\e[1;34m\]\w\[\e[1;31m\]$(__git_ps1)\[\e[00m\]\n\$ '
+PS1='[\[\e[1;33m\]\t \[\e[1;32m\]\u@\h\[\e[00m\]\[\e[1;35m\]$(__git_ps1)\[\e[00m\] -> \[\e[1;36m\]\w\[\e[00m\]]\n\$\[\e[m\] '
+export PS1
 
 # . $HOME/perl5/perlbrew/etc/bashrc
 ## plenv
