@@ -10,3 +10,6 @@
 [core]
 	pager = "LESS=-R less"
 	excludesfile = ~/.gitignore
+[ghq]
+	root = ~/.ghq
+	root = ~/go/src

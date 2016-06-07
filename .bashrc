@@ -32,6 +32,7 @@ export PATH=$(npm bin):$PATH
 
 ## gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+export PATH=$HOME/go/bin:$PATH
 
 ## TeX
 export PATH=/usr/texbin:$PATH
@@ -57,3 +58,4 @@ export PAGER
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+eval "$(boot2docker shellinit)"
