@@ -35,6 +35,7 @@ export PATH=$(npm bin):$PATH
 ## gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 export PATH=$HOME/go/bin:$PATH
+export GOPATH=$HOME/go
 
 ## TeX
 export PATH=/usr/texbin:$PATH
