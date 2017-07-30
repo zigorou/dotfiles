@@ -65,5 +65,5 @@ export XML_CATALOG_FILES
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-eval "$(boot2docker shellinit)"
+# export PATH="/usr/local/heroku/bin:$PATH"
+# eval "$(boot2docker shellinit)"
